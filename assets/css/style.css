@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body, html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar styling - override Bootstrap default */
+.navbar-dark.bg-primary {
+    background-color: #000066 !important;
+}
+
+.card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background: #fff;
+    padding: 24px;
+    margin-top: 40px;
+}
+
+.btn-primary {
+    background: #2563eb;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.alert {
+    padding: 10px 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.alert-danger {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.alert-success {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+/* Custom Offcanvas Sidebar Width for Mobile */
+@media (max-width: 991.98px) {
+    .offcanvas-end {
+        width: 250px !important;
+        background-color: #001a4d !important;
+        color: #fff;
+    }
+    .offcanvas-end .offcanvas-body, .offcanvas-end .offcanvas-header {
+        background-color: #001a4d !important;
+        color: #fff;
+    }
+    .offcanvas-end .nav-link {
+        color: #fff !important;
+    }
+    .offcanvas-end .nav-link.active, .offcanvas-end .nav-link:focus, .offcanvas-end .nav-link:hover {
+        color: #ffd700 !important;
+    }
+    .offcanvas-end .btn-close {
+        filter: invert(1);
+    }
+    /* Hide default collapse menu on mobile */
+    .navbar-collapse.d-none.d-lg-flex {
+        display: none !important;
+    }
+    /* Remove border and background from mobile menu button */
+    .navbar-toggler {
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+}
+
+/* Muted (kufifia) dashboard card colors */
+.dashboard-card.bg-primary {
+    background-color: #b3c6e7 !important;
+    color: #1a237e !important;
+}
+.dashboard-card.bg-success {
+    background-color: #b7e1cd !important;
+    color: #1b5e20 !important;
+}
+.dashboard-card.bg-warning {
+    background-color: #fff9c4 !important;
+    color: #795548 !important;
+}
+.dashboard-card.bg-danger {
+    background-color: #ffcdd2 !important;
+    color: #b71c1c !important;
+}
+
+/* Custom blue outline button */
+.btn-outline-blue {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    background: transparent;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-outline-blue:hover, .btn-outline-blue:focus {
+    background: #001a4d;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Maintenance Card Custom Styles */
+.card.bg-primary {
+    background: #e7f0fd !important; /* Soft blue */
+    border: 2px solid #0d6efd !important;
+    box-shadow: 0 4px 16px rgba(13, 110, 253, 0.15);
+    color: #0d6efd !important;
+}
+.card.bg-warning {
+    background: #fff8e1 !important; /* Soft yellow */
+    border: 2px solid #ffc107 !important;
+    box-shadow: 0 4px 16px rgba(255, 193, 7, 0.15);
+    color: #ffc107 !important;
+}
+.card.bg-danger {
+    background: #fdeaea !important; /* Soft red */
+    border: 2px solid #dc3545 !important;
+    box-shadow: 0 4px 16px rgba(220, 53, 69, 0.15);
+    color: #dc3545 !important;
+}
+.card.bg-success {
+    background: #e6f4ea !important; /* Soft green */
+    border: 2px solid #28a745 !important;
+    box-shadow: 0 4px 16px rgba(40, 167, 69, 0.15);
+    color: #28a745 !important;
+}
+
+/* Ensure card color styles do not affect buttons */
+/* .card .btn,
+.card .btn-primary,
+.card .btn-danger,
+.card .btn-success,
+.card .btn-outline-blue {
+    background: initial !important;
+    color: initial !important;
+    border: initial !important;
+    box-shadow: initial !important;
+} */ 
+
