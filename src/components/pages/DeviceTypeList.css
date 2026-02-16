@@ -1,0 +1,58 @@
+.device-type-container {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.device-type-title {
+  margin-bottom: 20px;
+  color: #011627;
+  font-weight: bold;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #f0f0f0;
+}
+
+.filter-button.active {
+  background-color: #023055;
+  color: white;
+}
+
+.device-type-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.device-type-table th {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.device-type-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.device-type-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-style: italic;
+}

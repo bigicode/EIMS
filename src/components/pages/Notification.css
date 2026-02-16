@@ -1,0 +1,367 @@
+.notification-container {
+  padding: 1.5rem;
+  color: #333;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.notification-header h2 {
+  color: #011627;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.notification-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.stat-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #6c757d;
+}
+
+.stat-card.urgent {
+  border-left-color: #dc3545;
+}
+
+.stat-card.pending {
+  border-left-color: #ffc107;
+}
+
+.stat-card.resolved {
+  border-left-color: #28a745;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #011627;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.notification-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search-box i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.filter-select {
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: white;
+  min-width: 150px;
+}
+
+.notification-table-container {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.notification-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.notification-table th,
+.notification-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.notification-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+}
+
+.notification-table th.sortable {
+  cursor: pointer;
+}
+
+.notification-table th.sortable:hover {
+  background-color: #e9ecef;
+}
+
+.notification-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.description-cell {
+  max-width: 250px;
+}
+
+.description-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.description-content:hover {
+  white-space: normal;
+  overflow: visible;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.unresolved {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.resolved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.in-progress {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.priority-badge.low {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.priority-badge.medium {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.priority-badge.high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-buttons button {
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.resolve-btn {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.resolve-btn:hover {
+  background-color: #c3e6cb;
+}
+
+.unresolve-btn {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.unresolve-btn:hover {
+  background-color: #ffeeba;
+}
+
+.delete-btn {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.delete-btn:hover {
+  background-color: #f5c6cb;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.empty-state i {
+  font-size: 3rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.empty-state p {
+  font-size: 1.25rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.reset-filters-btn {
+  background-color: #e9ecef;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.reset-filters-btn:hover {
+  background-color: #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .notification-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .notification-stats {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .notification-filters {
+    flex-direction: column;
+  }
+  
+  .filter-controls {
+    width: 100%;
+  }
+  
+  .filter-select {
+    flex: 1;
+  }
+}
+
+/* Priority row highlighting */
+.notification-table tbody tr.priority-high {
+  border-left: 4px solid #dc3545;
+}
+
+.notification-table tbody tr.priority-medium {
+  border-left: 4px solid #ffc107;
+}
+
+.notification-table tbody tr.priority-low {
+  border-left: 4px solid #6c757d;
+}
+
+.notification-table th.title,
+.notification-table td.title {
+  width: 15%;
+}
+
+.notification-table th.description,
+.notification-table td.description {
+  width: 25%;
+}
+
+.notification-table th.imei,
+.notification-table td.imei,
+.notification-table th.deviceNumber,
+.notification-table td.deviceNumber {
+  width: 12%;
+}
+
+.notification-table th.status,
+.notification-table td.status,
+.notification-table th.dateReported,
+.notification-table td.dateReported {
+  width: 10%;
+}
+
+.notification-table th.type,
+.notification-table td.type,
+.notification-table th.action,
+.notification-table td.action,
+.notification-table th.priority,
+.notification-table td.priority {
+  width: 10%;
+}
+
+.no-notifications {
+  padding: 20px;
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+}

@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.main{
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #e4e4e4ce;
+     margin-left: 0;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+.main.shifted {
+  margin-left: 240px;
+  padding-top: 70px;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: #011627;
+    height: 40px;
+}
+.header{
+    color: rgb(53, 157, 255);
+}
+.sidenav {
+  width: 240px;
+  background: #011627;
+  position: fixed;
+  top: 60px; /* height of your header */
+  bottom: 0;
+  left: -240px;
+  transition: all 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidenav.active {
+  left: 0;
+}
+.logo{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  
+}
+ul{
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0;
+}
+ul li a {
+    color:#eaecef;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    border-radius:  6px;
+}
+ul li a:hover,
+ul li a.active {
+    background:#172b4d ;
+}
+ul li a svg{
+    margin-right: 10px;
+    font-size: 15px;
+}
+header svg {
+    font-size: 40px;
+}
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+
+    font-size: 40px;
+    
+}
+.formdashboard{
+    margin-top: 130px;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.formdashboard h2 {
+    color: #02213a;
+
+}
+.admn{
+    color: #011627;
+}
+.formdashboard h2{
+    text-align: center;
+}
+.formdashboard hr{
+    width: 100%;
+}
+.formfield{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+    
+}
+.formfield button svg{
+    margin-right: 10px;
+    
+}
+.formfield input{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    margin: 10px;
+
+}
+.fogot a {
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 12px;
+}
+.formfield button{
+    border: none;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.button{
+    background-color:#023055;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #05579b;
+    color:white;
+}
+.devices-container {
+  padding: 2rem;
+}
+.devices-container2{
+    
+    padding: 2rem;
+    color: #011627;
+    font-size: 20px;
+    width: 70%;
+}
+.devices-container2 h4{
+    font-weight: bold;
+}
+.device-card {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  padding: 1rem;
+}
+.device-card:hover {
+  transform: translateY(-4px);
+}
+.device-card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.device-table {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  
+}
+.device-table h5{
+    color: #011627;
+    font-weight: bold;
+}
+.device-table th {
+  background-color: #f0f0f0;
+}
+.device-table td,
+.device-table th {
+  padding: 0.75rem;
+}
+
+.device-form {
+    font-size: 20px;
+  color: #011627;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.device-form input{
+    padding: 0.5rem;
+}
+.butan button{
+    background-color: #023055;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.butan button:hover{
+    background-color: #05579b;
+    color:white;
+}
+.formreg{
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+.headreg{
+    color: #011627;
+    font-weight: bold;
+}
+.reported{
+    font-size: 17px;
+    
+}
+.reported h2{
+    color: #011627;
+    font-weight: bold;
+}
+.reported table tr th{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.notification-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.notification-table th,
+.notification-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.notification-table th {
+  background-color: #f2f2f2;
+  width: auto;
+}
+
+.notification-table th.title,
+.notification-table td.title {
+  width: 15%;
+}
+
+.notification-table th.description,
+.notification-table td.description {
+  width: 25%;
+}
+
+.notification-table th.imei,
+.notification-table td.imei,
+.notification-table th.deviceNumber,
+.notification-table td.deviceNumber {
+  width: 12%;
+}
+
+.notification-table th.status,
+.notification-table td.status,
+.notification-table th.dateReported,
+.notification-table td.dateReported {
+  width: 10%;
+}
+
+.notification-table th.type,
+.notification-table td.type,
+.notification-table th.action,
+.notification-table td.action,
+.notification-table th.priority,
+.notification-table td.priority {
+  width: 10%;
+}

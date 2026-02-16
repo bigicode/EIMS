@@ -1,0 +1,75 @@
+.report-container {
+  padding: 2rem;
+  color: #011627;
+  font-size: 20px;
+  width: 70%;
+}
+
+.report-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #011627;
+}
+
+.report-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.radio-group {
+  margin: 15px 0;
+}
+
+.radio-option {
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.radio-input {
+  margin-right: 5px;
+}
+
+.submit-button {
+  background-color: #023055;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.submit-button:hover {
+  background-color: #05579b;
+}
